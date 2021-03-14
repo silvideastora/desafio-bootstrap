@@ -1,3 +1,33 @@
+.bgcolor {
+  background: #EEF0F1;
+}
+
+.bordercolor {
+  border: 1px solid #EEF0F1;
+}
+
+.list-group-item-action:hover {
+  color: #3B49DF;
+  border-radius: 7px;
+  background-color: #E2E4E6;
+}
+
+.card {
+  background-color: #EEF0F1;
+  border: 1px solid #EEF0F1;
+  /* margin-top: 40px; */
+}
+
+.card .card-body {
+  /* padding: 0%; */
+}
+
+.card .card-body p {
+  color: #323EBE;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
 .nopadding {
   padding: 0;
 }
