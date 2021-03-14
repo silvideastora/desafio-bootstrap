@@ -15,11 +15,6 @@
 .card {
   background-color: #EEF0F1;
   border: 1px solid #EEF0F1;
-  /* margin-top: 40px; */
-}
-
-.card .card-body {
-  /* padding: 0%; */
 }
 
 .card .card-body p {
