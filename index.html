@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -64,19 +65,58 @@
           </div>
     </header>
 
-    <div class="container">
+    <div class="container-fluid nopadding" style="background-color: aqua;">
         <div class="row">
 
             <!--Left aside-->
-            <div class="col-3">
-                
+            <div class=" d-none d-md-block col-md-3 bgcolor bordercolor ">
+
+                <div class="list-group bgcolor bordercolor">
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor"><img src="assets/icons/homeIcon.svg">  Home</a></button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor"><img src="assets/icons/readingListIcon.svg">  Reading list</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor"><span class="crayons-icon crayons-icon--default">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24" class="">
+                            <g class="nc-icon-wrapper">
+                                <path fill="#FFD983" d="M36 4H14a4 4 0 00-4 4v24H8a4 4 0 000 8h24a4 4 0 004-4V12a4 4 0 000-8z" class=""></path>
+                                <path fill="#E39F3D" d="M12 14h24v-2H14l-2-1z" class=""></path>
+                                <path fill="#FFE8B6" d="M14 4a4 4 0 00-4 4v24.555A3.955 3.955 0 008 32a4 4 0 104 4V11.445c.59.344 1.268.555 2 .555a4 4 0 000-8z" class=""></path>
+                                <path fill="#C1694F" d="M16 8a2 2 0 11-4.001-.001A2 2 0 0116 8m-6 28a2 2 0 11-4.001-.001A2 2 0 0110 36m24-17a1 1 0 01-1 1H15a1 1 0 010-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1" class=""></path>
+                            </g>
+                        </svg>           
+                    </span>Listings</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor"><img src="assets/icons/podcastIcon.svg">  Podcasts</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor"><img src="assets/icons/videosIcon.svg">  Videos</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor"><img src="assets/icons/tagsIcon.svg">  Tags</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor"><a style="margin-top: 10px; margin-left: 30px;">More...</a></button>
+                </div>
+
+                <div class="list-group" style="margin-top: 40px;">
+                    <div class="media">
+                        <div class="media-body">
+                          <h6 class="mt-0 mb-3 ml-3"><b>My tags</b></h6>
+                         </div>
+                        <img src="assets/icons/following_tags.svg" class="ml-3">
+                      </div>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor">#Javascript</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor">#python</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor">#css</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor">#git</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor">#vscoden</button>
+                    <button type="button" class="list-group-item list-group-item-action bgcolor bordercolor">#bash</button>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Th3frs95--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://thepracticaldev.s3.amazonaws.com/i/a7tz6hpmtwmgx2pe2ch2.jpg" style="margin-top:15px;" loading="lazy">
+                    <div class="card-body mt-0">
+                      <p class="card-text "> <b>DEV Up Your Style</b> </p>
+                    </div>
+                  </div>
             </div>
             <!--END Left aside-->
 
             <!--Main-->
-            <main class="col-12 col-lg-6 nopadding">
+            <main class="col-12 col-md-9 col-lg-6 nopadding">
 
-                <div class="col-12 w-100">
+                <div class="col-12 nopadding">
                     <!--Top Nav-->
 
                     <div class="col-12 d-flex">
@@ -96,12 +136,12 @@
 
                     <!--CARDS-->
                     <div class="col-12 d-flex">
-                        <div class="card d-flex">
-                            <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                        <div class="card d-flex w-100">
+                            <img src="https://picsum.photos/200" class="card-img-top" style="max-height: 350px;">
                             <div class="card-body">
                             
                                     <div class="media mb-2">
-                                        <img src="https://picsum.photos/200" class="mr-2" alt="Generic placeholder image" style="width: 35px; height: 35px; border-radius: 50%;">
+                                        <img src="https://picsum.photos/seed/picsum/200/300" class="mr-2" alt="Generic placeholder image" style="width: 35px; height: 35px; border-radius: 50%;">
                                         <div class="media-body">
                                         <span style=" font-size: 0.02rem; display: block; margin-bottom: 5px;">Media heading</span>
                                         <span style=" font-size: 0.02rem; display: block; margin-bottom: 5px;">Media heading</span>
@@ -130,7 +170,7 @@
                         <img src="assets/images/sheCoded.png" class="card-img w-100">
                         <b>Stories (122)</b>
                         <small>"Analogies & Visualizations w/ Lydia Hallie & Kevin Kononenko" </br> <a href="#"
-                                class="text-decoration-none font-weight-bolder"> →
+                                class=""> →
                                 tune
                                 in!</a> </small>
                     </div>
@@ -139,7 +179,7 @@
             
             
                 </div>
-                
+
             </div>
             
             <!--END Right aside-->

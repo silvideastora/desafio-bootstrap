@@ -1,0 +1,32 @@
+.bgcolor{
+    background: $main-color ;
+}
+.bordercolor{
+    border: 1px solid $main-color ;
+}
+
+.list-group-item-action{
+
+    &:hover {  
+        color: $highlight-color;  
+        border-radius: 7px; 
+        background-color: $asideLeft-active-gray ;    
+    }
+}
+.card{
+    background-color: $main-color;
+    border: 1px solid $main-color;
+    // margin-top: 40px;
+    .card-body{
+        // padding: 0%;
+        p{
+            color: $highlight-active ;
+            font-size: 1.5rem;
+            margin-left: 20px;
+            
+            
+        }
+
+    }
+    
+}
