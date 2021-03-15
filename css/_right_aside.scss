@@ -1,12 +1,53 @@
 #rightAside{
+    @mixin highlight-hover {
+        &:hover{
+            color: $highlight-color;
+            background-color: white ;
+        }
+    }
     .card{
-        .right-boxes {
-            background-color: $asideRight-bg-color;
-            .card-img{
-                height: 115px;
-                width: 115px;
+        .h-hover {
+            &:hover{
+                color: $highlight-color;
+            } 
+        }
+        .card-header{
+            background-color:$asideRight-bg-color;
+            a{
+                @include highlight-hover;
+            }
+        
+        }
+        .card-body{
+            ul{
+                li{
+                    background-color: $asideRight-bg-color;    
+                    @include highlight-hover;
+                    span{
+                        font-size: smaller;
+                        display: block;
+                        margin-top: 3px;
+                        button{
+                            background-color: $saved-active;
+                            border-color: $saved-active;
+                            color: #F9FAFA;
+                            border-radius: 5px;
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+                
             }
         }
-        
+        .btn-share{
+            background-color: $highlight-color;
+            color: white;
+        }
+        .btn-see{
+            background-color: $saveBtn-inactive-gray;
+        }
+        .card-footer{
+            background-color:$asideRight-bg-color;
+        }
     }
 }
