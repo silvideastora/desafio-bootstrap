@@ -8,6 +8,32 @@ a:hover {
   color: black;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.a-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jc-flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.b-radius-100 {
+  border-radius: 100%;
+}
+
 #rightAside .card .right-boxes {
   background-color: #F9FAFA;
 }
@@ -17,18 +43,31 @@ a:hover {
   width: 115px;
 }
 
+.righthead {
+  padding-right: 150px;
+}
+
+.righthead i {
+  cursor: pointer;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.righthead img {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.headercolor {
+  background-color: white;
+}
+
 .bgcolor {
   background: #EEF0F1;
 }
 
 .bordercolor {
   border: 1px solid #EEF0F1;
-}
-
-.list-group-item-action:hover {
-  color: #3B49DF;
-  border-radius: 7px;
-  background-color: #E2E4E6;
 }
 
 #left-aside .card {
@@ -45,5 +84,67 @@ a:hover {
   color: #323EBE;
   font-size: 1.5rem;
   margin-left: 20px;
+}
+
+#left-aside .list-group-item-action:hover {
+  color: #3B49DF;
+  border-radius: 7px;
+  background-color: #E2E4E6;
+}
+
+#left-aside2 .card {
+  margin-top: 40px;
+  background-color: #EEF0F1;
+  border-color: #EEF0F1;
+}
+
+#left-aside2 .card .card-body {
+  height: 70px;
+}
+
+#left-aside2 .card .heart {
+  margin-left: auto;
+}
+
+#left-aside2 .card .heart img:hover {
+  color: red;
+  border-radius: 50%;
+  border-radius: 10px solid #cf5069;
+  background-color: #cf5069;
+  cursor: pointer;
+}
+
+#left-aside2 .card .unicorn {
+  margin-left: auto;
+}
+
+#left-aside2 .card .unicorn img:hover {
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#f4f4f4), color-stop(0%, rgba(33, 252, 223, 0.482528)));
+  background: linear-gradient(90deg, #f4f4f4 0%, rgba(33, 252, 223, 0.482528) 0%);
+  cursor: pointer;
+}
+
+#left-aside2 .card .saved {
+  margin-left: auto;
+}
+
+#left-aside2 .card .saved img:hover {
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#f4f4f4), color-stop(0%, rgba(33, 104, 252, 0.482528)));
+  background: linear-gradient(90deg, #f4f4f4 0%, rgba(33, 104, 252, 0.482528) 0%);
+  cursor: pointer;
+}
+
+#left-aside2 .card .dots {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+#left-aside2 .card .dots i:hover {
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#f4f4f4), color-stop(0%, rgba(30, 36, 48, 0.266842)));
+  background: linear-gradient(90deg, #f4f4f4 0%, rgba(30, 36, 48, 0.266842) 0%);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
