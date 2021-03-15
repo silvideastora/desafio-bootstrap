@@ -45,3 +45,10 @@ footer {
     top: -2px;
     right: 38px;
 }
+
+.card-body{
+    .btn-share{
+        background-color: $highlight-color;
+        color: white;
+    }
+}
