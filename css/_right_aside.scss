@@ -1,14 +1,14 @@
 #rightAside{
     .card{
         .right-boxes {
-            background-color: $asideRight-bg-color;
+            background-color: white;
             .card-img{
                 height: 115px;
                 width: 115px;
             }
         }
         .card-header{
-            
+            background-color: white;
         }
     }
 }
