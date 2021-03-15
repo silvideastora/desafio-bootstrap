@@ -28,9 +28,6 @@ footer {
     color: black;
     font-size: 18px;
     margin: 0 auto;
-    @include tablet{
-        font-size: 20px;
-    }
 }
 .footer-social-media{
     padding-top: 20px;
@@ -44,11 +41,4 @@ footer {
     width: 52px;
     top: -2px;
     right: 38px;
-}
-
-.card-body{
-    .btn-share{
-        background-color: $highlight-color;
-        color: white;
-    }
 }
