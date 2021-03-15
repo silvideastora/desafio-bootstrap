@@ -23,6 +23,18 @@
                 li{
                     background-color: $asideRight-bg-color;    
                     @include highlight-hover;
+                    span{
+                        font-size: smaller;
+                        display: block;
+                        margin-top: 3px;
+                        button{
+                            background-color: $saved-active;
+                            border-color: $saved-active;
+                            color: #F9FAFA;
+                            border-radius: 5px;
+                            font-size: 0.875rem;
+                        }
+                    }
                 }
                 
             }
@@ -36,7 +48,6 @@
         }
         .card-footer{
             background-color:$asideRight-bg-color;
-           
         }
     }
 }
