@@ -1,0 +1,47 @@
+footer {
+    padding: 100px 0px;
+    margin-top: 20px;
+    display: none;
+    background-color: $footer-bg-color;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a{
+            color: $inactive-gray;
+            margin: 3px 6px;
+            text-decoration: none;
+        }
+        p{
+            color: $inactive-gray-light;
+            b{
+                color: $logo-active;
+            }
+        }
+    }
+}
+.footer-nav{
+    color: black;
+    font-size: 18px;
+    margin: 0 auto;
+    @include tablet{
+        font-size: 20px;
+    }
+}
+.footer-social-media{
+    padding-top: 20px;
+    svg:hover{
+        fill: $inactive-gray-light;
+    }    
+}
+
+.perezoso{
+    position: absolute;
+    width: 52px;
+    top: -2px;
+    right: 38px;
+}
