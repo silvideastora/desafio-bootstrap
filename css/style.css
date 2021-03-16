@@ -240,6 +240,48 @@ a:hover {
   cursor: pointer;
 }
 
+.select-button {
+  width: 80px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+
+#second-navbar {
+  width: 1000px;
+  color: #4D5760;
+}
+
+#second-navbar button {
+  margin: 0px 3px;
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#second-navbar button:first-child {
+  border-bottom: solid 3px #323EBE;
+}
+
+#second-navbar button:first-child:hover {
+  border-bottom: solid 3px #323EBE;
+}
+
+#second-navbar button:hover {
+  color: black;
+  background-color: #E1D3FF;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #323EBE;
+}
+
 footer {
   padding: 100px 0px;
   margin-top: 20px;
