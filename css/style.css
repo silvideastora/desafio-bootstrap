@@ -79,8 +79,16 @@ a:hover {
   color: white;
 }
 
+#rightAside .card .btn-share:hover {
+  background-color: #323EBE;
+}
+
 #rightAside .card .btn-see {
   background-color: #D2D6DB;
+}
+
+#rightAside .card .btn-see:hover {
+  background-color: #a2acb4;
 }
 
 #rightAside .card .card-footer {
@@ -110,6 +118,15 @@ a:hover {
   background-color: #3B49DF;
   color: white;
   margin-top: -25px;
+}
+
+.righthead button {
+  background-color: #3B49DF;
+  color: white;
+}
+
+.righthead button:hover {
+  background-color: #323EBE;
 }
 
 .righthead i {
