@@ -43,9 +43,15 @@
         .btn-share{
             background-color: $highlight-color;
             color: white;
+            &:hover{
+                background-color: $highlight-active;
+            }
         }
         .btn-see{
             background-color: $saveBtn-inactive-gray;
+            &:hover{
+                background-color: $saveBtn-active-gray-2;
+            }
         }
         .card-footer{
             background-color:$asideRight-bg-color;

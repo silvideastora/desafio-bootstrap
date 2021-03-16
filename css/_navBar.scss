@@ -1,5 +1,12 @@
 .righthead{
     // padding-right: 150px;
+    button{
+            background-color: $highlight-color;
+            color: white;
+            &:hover{
+                background-color: $highlight-active;
+            }
+    }
     
     i{
         cursor: pointer;
