@@ -1,5 +1,5 @@
 .righthead{
-    padding-right: 150px;
+    // padding-right: 150px;
     
     i{
         cursor: pointer;
@@ -14,4 +14,49 @@
 }
 .headercolor{
     background-color: white;
+}
+
+@media only screen and (min-width: 1024px){
+    header{
+        nav{
+            a{
+                img{
+                    margin-left: 70px;
+                }
+            }
+            form.righthead{
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    header{
+        nav{
+            a{
+                img{
+                    margin-left: 140px;
+                }
+            }
+            form.righthead{
+                margin-right: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    header{
+        nav{
+            a{
+                img{
+                    margin-left: 190px;
+                }
+            }
+            form.righthead{
+                margin-right: 190px;
+            }
+        }
+    }
 }

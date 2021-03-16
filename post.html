@@ -9,63 +9,25 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
     
-    <title>Document</title>
+    <title>DEV Community 🧑‍💻👩‍💻</title>
 </head>
 <body>
-    <!-- Componente Card-->
-    <!--<div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>     
-    </div>    
 
-    Componente nav horizontal
-
-<ul class="nav justify-content-end">
-    <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-</li>
-</ul>  
-
-    Para los botones
-
-    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-
-    Para inside_post los hashtag #css #javascript. etc
-    
-    <span class="badge badge-primary">Primary</span>    
-    <span class="badge badge-secondary">Secondary</span>
-    <span class="badge badge-success">Success</span>
-    <span class="badge badge-danger">Danger</span>
-
-
--->
     <header>
         <!-- Image and text -->
         <nav class="navbar navbar-light headercolor p-0">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/icons/devIcon.svg" width="50" height="50" class="d-inline-block align-top"  style="margin-left: 100px;" alt="">
+                <i class="fas fa-bars mt-3 ml-3 mr-3 d-md-none"></i>
+                <img src="assets/icons/devIcon.svg" width="50" height="50" class="d-inline-block align-top" alt="">
             </a>
-            <form class="form-inline "  style="margin-right: auto;">
-                <input style="width:300px " class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <form class="form-inline mr-auto d-none d-md-block">
+                <input  class="form-control" style="width: 300px;" type="search" placeholder="Search..." aria-label="Search">
             </form>
-            <form class=" righthead w-50 d-flex a-items-center jc-flex-end">
-                <button type="button" class="btn btn-primary">Write a post</button><i class="fas fa-search mr-20" id="search-icon"></i>
+            <form class=" righthead d-flex a-items-center">
+                <button type="button" class="btn btn-primary d-none d-md-block">Write a post</button><i class="fas fa-search  d-md-none mr-20" id="search-icon"></i>
                 <img src="assets/icons/notifications.svg" class="mr-20" alt="">
                 <i class="far fa-bell mr-20"></i>
-                <img id="user-nav-img" class="b-radius-100 mr-20" src="assets/images/usuarioLogNav.webp" alt="" style="height: 40px; ">
+                <img id="user-nav-img" class="b-radius-100 mr-20" src="assets/images/usuarioLogNav.webp" alt="" style="height: 40px;">
                 
             </form>
         </nav>
@@ -75,7 +37,7 @@
         <div class="row">
 
             <!--Left aside-->
-            <div class=" d-none d-md-block  col-12  col-md-1 p-lg-3  bordercolor" id="left-aside2">
+            <div class=" d-none d-md-block  col-12  text-right col-md-1 offset-lg-1 p-lg-2  bordercolor" id="left-aside2">
                 <div class="card">   
                     <div class="card-body heart">
                         <img src="assets/icons/heart.svg">
@@ -137,7 +99,7 @@
             <!--ENDMain-->
 
             <!--Right aside-->
-            <div class="pt-3 d-none d-lg-block col-lg-4" id="rightAside2">
+            <div class="pt-3 d-none d-lg-block col-lg-3" id="rightAside2">
                 <div class="card rounded-sm">
                     <div class="bg-dark p-3 rounded-top"></div>
                     <div class="card-header">

@@ -1,4 +1,5 @@
 #rightAside{
+    max-width: 333px;
     @mixin highlight-hover {
         &:hover{
             color: $highlight-color;
