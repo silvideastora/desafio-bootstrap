@@ -300,8 +300,7 @@ a:hover {
 }
 
 footer {
-  padding: 100px 0px;
-  margin-top: 20px;
+  padding: 50px 0px;
   display: none;
   background-color: #D8DBDF;
   position: relative;
@@ -338,24 +337,29 @@ footer div p b {
   color: #363D44;
 }
 
-.footer-nav {
-  color: black;
-  font-size: 18px;
-  margin: 0 auto;
-}
-
-.footer-social-media {
-  padding-top: 20px;
-}
-
-.footer-social-media svg:hover {
-  fill: #4D5760;
-}
-
 .perezoso {
   position: absolute;
   width: 52px;
   top: -2px;
   right: 38px;
+}
+
+.social-media img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  fill: currentColor;
+  color: #363D44;
+}
+
+/*Tablet version*/
+@media screen and (min-width: 768px) {
+  footer {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
