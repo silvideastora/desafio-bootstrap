@@ -1,6 +1,5 @@
 footer {
-    padding: 100px 0px;
-    margin-top: 20px;
+    padding: 50px 0px;
     display: none;
     background-color: $footer-bg-color;
     position: relative;
@@ -24,21 +23,28 @@ footer {
         }
     }
 }
-.footer-nav{
-    color: black;
-    font-size: 18px;
-    margin: 0 auto;
-}
-.footer-social-media{
-    padding-top: 20px;
-    svg:hover{
-        fill: $inactive-gray-light;
-    }    
-}
 
 .perezoso{
     position: absolute;
     width: 52px;
     top: -2px;
     right: 38px;
+}
+.social-media img{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    fill: currentColor;
+    color: $inactive-gray;
+
+
+}
+
+/*Tablet version*/
+
+
+@media screen and (min-width: 768px){
+    footer{
+        display: block;
+    }
 }

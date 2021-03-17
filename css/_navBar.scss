@@ -1,19 +1,67 @@
 .righthead{
-        padding-right: 150px;
-        
-        i{
-            cursor: pointer;
-            font-size: 25px;
-            margin: 0 10px;
-        }
-        
-        img{
-            cursor: pointer;  
-            margin: 0 10px;   
-        }
+    // padding-right: 150px;
+    button{
+            background-color: $highlight-color;
+            color: white;
+            &:hover{
+                background-color: $highlight-active;
+            }
+    }
+    
+    i{
+        cursor: pointer;
+        font-size: 25px;
+        margin: 0 10px;
     }
     .headercolor{
         background-color: white;
     }
+}
+.headercolor{
+    background-color: white;
+}
 
+@media only screen and (min-width: 1024px){
+    header{
+        nav{
+            a{
+                img{
+                    margin-left: 70px;
+                }
+            }
+            form.righthead{
+                padding-right: 30px;
+            }
+        }
+    }
+}
 
+@media only screen and (min-width: 1200px){
+    header{
+        nav{
+            a{
+                img{
+                    margin-left: 140px;
+                }
+            }
+            form.righthead{
+                margin-right: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    header{
+        nav{
+            a{
+                img{
+                    margin-left: 190px;
+                }
+            }
+            form.righthead{
+                margin-right: 190px;
+            }
+        }
+    }
+}

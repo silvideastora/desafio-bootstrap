@@ -34,6 +34,10 @@ a:hover {
   border-radius: 100%;
 }
 
+#rightAside {
+  max-width: 333px;
+}
+
 #rightAside .card .h-hover:hover {
   color: #3B49DF;
 }
@@ -75,16 +79,54 @@ a:hover {
   color: white;
 }
 
+#rightAside .card .btn-share:hover {
+  background-color: #323EBE;
+}
+
 #rightAside .card .btn-see {
   background-color: #D2D6DB;
+}
+
+#rightAside .card .btn-see:hover {
+  background-color: #a2acb4;
 }
 
 #rightAside .card .card-footer {
   background-color: #F9FAFA;
 }
 
-.righthead {
-  padding-right: 150px;
+#rightAside2 .card .card-header {
+  border-bottom: 0px;
+}
+
+#rightAside2 .card .card-header a span:nth-child(1) {
+  width: 48px;
+  height: 32px;
+  margin-top: -25px;
+}
+
+#rightAside2 .card .card-body ul li {
+  background-color: #F9FAFA;
+}
+
+#rightAside2 .card .card-body ul li:hover {
+  color: #3B49DF;
+  background-color: white;
+}
+
+#rightAside2 .card .card-body .btn-follow {
+  background-color: #3B49DF;
+  color: white;
+  margin-top: -25px;
+}
+
+.righthead button {
+  background-color: #3B49DF;
+  color: white;
+}
+
+.righthead button:hover {
+  background-color: #323EBE;
 }
 
 .righthead i {
@@ -100,6 +142,33 @@ a:hover {
 
 .headercolor {
   background-color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  header nav a img {
+    margin-left: 70px;
+  }
+  header nav form.righthead {
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header nav a img {
+    margin-left: 140px;
+  }
+  header nav form.righthead {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  header nav a img {
+    margin-left: 190px;
+  }
+  header nav form.righthead {
+    margin-right: 190px;
+  }
 }
 
 .bgcolor {
@@ -188,9 +257,75 @@ a:hover {
   cursor: pointer;
 }
 
+.select-button {
+  width: 80px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+
+#second-navbar {
+  width: 1000px;
+  color: #4D5760;
+}
+
+#second-navbar button {
+  margin: 0px 3px;
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#second-navbar button:first-child {
+  border-bottom: solid 3px #323EBE;
+}
+
+#second-navbar button:first-child:hover {
+  border-bottom: solid 3px #323EBE;
+}
+
+#second-navbar button:hover {
+  color: black;
+  background-color: #E1D3FF;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #323EBE;
+}
+
+.gray-text {
+  color: #727272;
+}
+
+.btn-save {
+  background-color: #cfcece;
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 35px;
+  color: #666666;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: #b8b8b8;
+}
+
+.tag-button {
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+
 footer {
-  padding: 100px 0px;
-  margin-top: 20px;
+  padding: 50px 0px;
   display: none;
   background-color: #D8DBDF;
   position: relative;
@@ -227,24 +362,29 @@ footer div p b {
   color: #363D44;
 }
 
-.footer-nav {
-  color: black;
-  font-size: 18px;
-  margin: 0 auto;
-}
-
-.footer-social-media {
-  padding-top: 20px;
-}
-
-.footer-social-media svg:hover {
-  fill: #4D5760;
-}
-
 .perezoso {
   position: absolute;
   width: 52px;
   top: -2px;
   right: 38px;
+}
+
+.social-media img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  fill: currentColor;
+  color: #363D44;
+}
+
+/*Tablet version*/
+@media screen and (min-width: 768px) {
+  footer {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
