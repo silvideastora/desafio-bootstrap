@@ -32,6 +32,28 @@
             transition-duration: 0.5s;
             color: $highlight-active;
         }
+    }   
+}
+
+.gray-text{
+    color: rgb(114, 114, 114);
+}
+
+.btn-save{
+    background-color: rgb(207, 206, 206);
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+    color: rgb(102, 102, 102);
+    font-size: 0.9rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(184, 184, 184);
     }
-    
+}
+.tag-button{
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
 }
