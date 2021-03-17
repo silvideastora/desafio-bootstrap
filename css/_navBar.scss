@@ -1,27 +1,77 @@
-.righthead{
-    // padding-right: 150px;
-    button{
-            background-color: $highlight-color;
-            color: white;
-            &:hover{
-                background-color: $highlight-active;
-            }
+#navtop{
+
+    .navbar-brand{
+        
+        width: 50px;
+        height: 50px;
+        margin-right: 45px;
+        padding: 0;
+
     }
+    .righthead{
+        // padding-right: 150px;
+        button{
+                background-color: $highlight-color;
+                color: white;
+                &:hover{
+                    background-color: $highlight-active;
+                }
+        }
+        
+        i{
+            cursor: pointer;
+            font-size: 25px;
+            margin: 0 10px;
+        }
+        img{
+            cursor: pointer;
+            margin: 0 10px;
+            
+        }
     
-    i{
-        cursor: pointer;
-        font-size: 25px;
-        margin: 0 10px;
-    }
-    img{
-        cursor: pointer;
-        margin: 0 10px;
+        
     }
 
-    
 }
+
+.collapse{
+    position: absolute;
+    z-index: 9999px;
+    background: white;
+    border: 1px solid $asideLeft-active-gray ;
+    width: 80%;
+    height: 800px;
+    left: -50%;
+    top: 57px;
+    transition: left 1s linear ;
+    left: 0;
+    
+    
+    
+    .bgcolor{
+        background: white;
+        border: 1px solid white;
+    }
+   
+}
+.navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 0, 0, 0,29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; 
+
+ }
+
+   
+
+
+
+
+
+
 .headercolor{
     background-color: white;
+}
+
+@media screen and (min-width: 768px){
+    
 }
 
 @media only screen and (min-width: 1024px){
@@ -44,7 +94,7 @@
         nav{
             a{
                 img{
-                    margin-left: 140px;
+                   
                 }
             }
             form.righthead{
@@ -59,7 +109,7 @@
         nav{
             a{
                 img{
-                    margin-left: 190px;
+                    
                 }
             }
             form.righthead{
