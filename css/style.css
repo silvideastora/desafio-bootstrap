@@ -299,6 +299,31 @@ a:hover {
   color: #323EBE;
 }
 
+.gray-text {
+  color: #727272;
+}
+
+.btn-save {
+  background-color: #cfcece;
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 35px;
+  color: #666666;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: #b8b8b8;
+}
+
+.tag-button {
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+
 footer {
   padding: 100px 0px;
   margin-top: 20px;
