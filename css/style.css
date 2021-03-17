@@ -34,13 +34,53 @@ a:hover {
   border-radius: 100%;
 }
 
-#rightAside .card .right-boxes {
+#rightAside .card .h-hover:hover {
+  color: #3B49DF;
+}
+
+#rightAside .card .card-header {
   background-color: #F9FAFA;
 }
 
-#rightAside .card .right-boxes .card-img {
-  height: 115px;
-  width: 115px;
+#rightAside .card .card-header a:hover {
+  color: #3B49DF;
+  background-color: white;
+}
+
+#rightAside .card .card-body ul li {
+  background-color: #F9FAFA;
+}
+
+#rightAside .card .card-body ul li:hover {
+  color: #3B49DF;
+  background-color: white;
+}
+
+#rightAside .card .card-body ul li span {
+  font-size: smaller;
+  display: block;
+  margin-top: 3px;
+}
+
+#rightAside .card .card-body ul li span button {
+  background-color: #3B49DF;
+  border-color: #3B49DF;
+  color: #F9FAFA;
+  border-radius: 5px;
+  font-size: 0.875rem;
+}
+
+#rightAside .card .btn-share {
+  background-color: #3B49DF;
+  color: white;
+}
+
+#rightAside .card .btn-see {
+  background-color: #D2D6DB;
+}
+
+#rightAside .card .card-footer {
+  background-color: #F9FAFA;
 }
 
 .righthead {
@@ -146,5 +186,65 @@ a:hover {
   background: -webkit-gradient(linear, left top, right top, from(#f4f4f4), color-stop(0%, rgba(30, 36, 48, 0.266842)));
   background: linear-gradient(90deg, #f4f4f4 0%, rgba(30, 36, 48, 0.266842) 0%);
   cursor: pointer;
+}
+
+footer {
+  padding: 100px 0px;
+  margin-top: 20px;
+  display: none;
+  background-color: #D8DBDF;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div a {
+  color: #363D44;
+  margin: 3px 6px;
+  text-decoration: none;
+}
+
+footer div p {
+  color: #4D5760;
+}
+
+footer div p b {
+  color: #363D44;
+}
+
+.footer-nav {
+  color: black;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.footer-social-media {
+  padding-top: 20px;
+}
+
+.footer-social-media svg:hover {
+  fill: #4D5760;
+}
+
+.perezoso {
+  position: absolute;
+  width: 52px;
+  top: -2px;
+  right: 38px;
 }
 /*# sourceMappingURL=style.css.map */
