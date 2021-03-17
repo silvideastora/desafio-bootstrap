@@ -135,9 +135,8 @@ a:hover {
   margin: 0 10px;
 }
 
-.righthead img {
-  cursor: pointer;
-  margin: 0 10px;
+.righthead .headercolor {
+  background-color: white;
 }
 
 .headercolor {
