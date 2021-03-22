@@ -34,6 +34,53 @@ a:hover {
   border-radius: 100%;
 }
 
+.f-dir-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.m-sides-10 {
+  margin: 0px 10px;
+}
+
+.h-full {
+  height: 100%;
+}
+
 #rightAside {
   max-width: 333px;
 }
@@ -120,78 +167,137 @@ a:hover {
   margin-top: -25px;
 }
 
-#navtop .navbar-brand {
+header {
+  /*Tablet version*/
+  /*END Tablet version*/
+  /*Desktop version*/
+  /*END Desktop version*/
+}
+
+header .collapse {
+  position: fixed;
+  z-index: 9999;
+  left: -75%;
+  -webkit-transition: left .8s ease-in-out;
+  transition: left .8s ease-in-out;
+  left: 0%;
+}
+
+header .collapse .ham-container {
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+header nav {
+  height: 55px;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  border-bottom: solid 1px lightgray;
+}
+
+header nav .lefthead i {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+header nav .lefthead img {
+  cursor: pointer;
+}
+
+header nav .lefthead #search-bar {
+  margin-left: 10px;
+  padding: 6px;
+  border: 1px solid #4D5760;
+  border-radius: 5px;
+  margin-right: 16px;
+  font-size: 19px;
+}
+
+header nav .lefthead .link {
   width: 50px;
-  height: 50px;
-  margin-right: 45px;
+  z-index: 9999px;
+}
+
+header nav .lefthead .navbar-toggler {
   padding: 0;
+  width: 25px;
 }
 
-#navtop .righthead button {
-  background-color: #3B49DF;
-  color: white;
-}
-
-#navtop .righthead button:hover {
-  background-color: #323EBE;
-}
-
-#navtop .righthead i {
+header nav .righthead i {
   cursor: pointer;
   font-size: 25px;
-  margin: 0 10px;
 }
 
-#navtop .righthead img {
+header nav .righthead img {
   cursor: pointer;
-  margin: 0 10px;
 }
 
-.collapse {
-  position: absolute;
-  z-index: 9999px;
-  background: white;
-  border: 1px solid #E2E4E6;
-  width: 80%;
-  height: 800px;
-  left: -50%;
-  top: 57px;
-  -webkit-transition: left 1s linear;
-  transition: left 1s linear;
-  left: 0;
+header nav .righthead button {
+  background-color: #5C1CE3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
-.collapse .bgcolor {
-  background: white;
-  border: 1px solid white;
+header nav .righthead button:hover {
+  background-color: #4405C8;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 0, 0, 0,29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+header .fa-bars {
+  display: block;
 }
 
-.headercolor {
-  background-color: white;
-}
-
-@media only screen and (min-width: 1024px) {
-  header nav a img {
-    margin-left: 70px;
+@media screen and (min-width: 1px) {
+  header #search-bar {
+    display: none;
   }
-  header nav form.righthead {
-    padding-right: 30px;
+  header #search-button {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  header nav form.righthead {
-    margin-right: 100px;
+@media screen and (min-width: 768px) {
+  header .fa-bars {
+    display: none;
+  }
+  header #search-bar {
+    display: inline-block;
+  }
+  header #search-button {
+    display: block;
+  }
+  header #search-icon {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 1500px) {
-  header nav form.righthead {
-    margin-right: 190px;
+@media screen and (min-width: 1024px) {
+  header #user-nav-img {
+    margin-right: 6vw;
+  }
+  header #logo-nav-img {
+    margin-left: 6vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header #user-nav-img {
+    margin-right: 14vw;
+  }
+  header #logo-nav-img {
+    margin-left: 10vw;
   }
 }
 
@@ -201,6 +307,14 @@ a:hover {
 
 .bordercolor {
   border: 1px solid #EEF0F1;
+}
+
+.bgcolor2 {
+  background: white;
+}
+
+.bordercolor2 {
+  border: 1px solid white;
 }
 
 #left-aside .card {
@@ -288,10 +402,6 @@ a:hover {
   border-radius: 5px;
   border: solid 1px lightgray;
   padding: 5px;
-}
-
-main {
-  margin-top: 65px;
 }
 
 #second-navbar {
